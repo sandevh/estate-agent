@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import PropertyItem from './components/PropertyItem/PropertyItem';
+import propertyData from "./data/properties.json";
 
 function App() {
+
+  const [properties] = useState(propertyData.properties || []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {properties.map((property) => 
+        <PropertyItem 
+          key={property.id}
+          property={property}
+        />
+      )}
     </div>
   );
 }
