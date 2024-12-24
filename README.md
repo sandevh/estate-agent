@@ -1,3 +1,7 @@
+# estate-agent
+A responsive and interactive single-page web application (SPA) for property search, inspired by rightmove.co.uk, built using React. This project is part of my coursework for the "Advanced Client-Side Web Development" module at the University of Westminster
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
