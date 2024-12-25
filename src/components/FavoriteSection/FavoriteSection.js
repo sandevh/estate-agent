@@ -1,6 +1,6 @@
 import React from "react";
 import PropertyItem from "../PropertyItem/PropertyItem";
-import "../FavortiteSection/FavoriteSection.css";
+import "./FavoriteSection.css";
 
 const FavoriteSection = ({favorites, toggleFavorite, onClear}) => {
 
@@ -11,6 +11,7 @@ const FavoriteSection = ({favorites, toggleFavorite, onClear}) => {
       )}
       {favorites.map((favoriteProperty) => (
         <PropertyItem
+        key={favoriteProperty.id}
           property={favoriteProperty}
           toggleFavorite={toggleFavorite}
           isInFavorites={true}

@@ -25,6 +25,16 @@ const SearchForm = ({ onSearch }) => {
 
   const handleReset = (e) => {
     e.preventDefault();
+    setSearch({
+      type: "",
+      minPrice: "",
+      maxPrice: "",
+      minBedrooms: "",
+      maxBedrooms: "",
+      startDate: "",
+      endDate: "",
+      postcodeArea: "",
+    });
     onSearch({
       type: "",
       minPrice: "",
@@ -35,12 +45,12 @@ const SearchForm = ({ onSearch }) => {
       endDate: "",
       postcodeArea: "",
     });
-  }
+  };
 
   return (
     <div className="search-form">
       <form onSubmit={handleSubmit} onReset={handleReset}>
-        <div>
+        <div className="form-group">
           <label>Type: </label>
           <select name="type" value={search.type} onChange={handleChange}>
             <option value="">Any</option>
@@ -49,67 +59,73 @@ const SearchForm = ({ onSearch }) => {
           </select>
         </div>
 
-        <div>
-          <label>Min Price: </label>
-          <input
-            type="number"
-            name="minPrice"
-            value={search.minPrice}
-            onChange={handleChange}
-          />
+        <div className="form-group-inline">
+          <div>
+            <label>Min Price: </label>
+            <input
+              type="number"
+              name="minPrice"
+              value={search.minPrice}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div>
+            <label>Max Price: </label>
+            <input
+              type="number"
+              name="maxPrice"
+              value={search.maxPrice}
+              onChange={handleChange}
+            />
+          </div>
         </div>
 
-        <div>
-          <label>Max Price: </label>
-          <input
-            type="number"
-            name="maxPrice"
-            value={search.maxPrice}
-            onChange={handleChange}
-          />
+        <div className="form-group-inline">
+          <div>
+            <label>Min Bedrooms: </label>
+            <input
+              type="number"
+              name="minBedrooms"
+              value={search.minBedrooms}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div>
+            <label>Max Bedrooms: </label>
+            <input
+              type="number"
+              name="maxBedrooms"
+              value={search.maxBedrooms}
+              onChange={handleChange}
+            />
+          </div>
         </div>
 
-        <div>
-          <label>Min Bedrooms: </label>
-          <input
-            type="number"
-            name="minBedrooms"
-            value={search.minBedrooms} 
-            onChange={handleChange}
-          />
+        <div className="form-group-inline">
+          <div>
+            <label>Start Date: </label>
+            <input
+              type="date"
+              name="startDate"
+              value={search.startDate}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div>
+            <label>End Date: </label>
+            <input
+              type="date"
+              name="endDate"
+              value={search.endDate}
+              onChange={handleChange}
+            />
+          </div>
         </div>
 
-        <div>
-          <label>Max Bedrooms: </label>
-          <input
-            type="number"
-            name="maxBedrooms"
-            value={search.maxBedrooms}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div>
-          <label>Start Date: </label>
-          <input
-            type="date"
-            name="startDate"
-            value={search.startDate} 
-            onChange={handleChange}
-          />
-        </div>
-
-        <div>
-          <label>End Date: </label>
-          <input
-            type="date"
-            name="endDate"
-            value={search.endDate} 
-            onChange={handleChange}
-          />
-        </div>
-
-        <div>
+        <div className="form-group">
           <label>Post Code: </label>
           <input
             type="text"
@@ -119,8 +135,10 @@ const SearchForm = ({ onSearch }) => {
           />
         </div>
 
-        <button type="submit">Search</button>
-        <button type="reset">Reset</button>
+        <div className="control-buttons">
+          <button type="submit">Search</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </div>
   );

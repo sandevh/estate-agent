@@ -1,36 +1,94 @@
 .search-form {
-  background-color: #fff;
   padding: 20px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: rgb(5, 5, 81);
+  color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search-form form {
-  display: grid;
-  gap: 15px;
+form {
+  display: flex;
+  gap: 10px;
 }
 
-.search-form label {
-  font-weight: bold;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-.search-form input,
-.search-form select {
+.form-group-inline {
+  margin-bottom: 15px;
+}
+
+/* .form-group-inline>div {
+  width: 48%;
+} */
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  /* color: #333; */
+}
+
+select {
   padding: 8px;
-  width: 100%;
+  font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
 }
 
-.search-form button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
+input[type="number"],
+input[type="text"],
+input[type="date"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 3px rgba(74, 144, 226, 0.5);
+}
+
+.control-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4a90e2;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.search-form button:hover {
-  background-color: #45a049;
+button[type="reset"] {
+  background-color: #f1f1f1;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+button[type="reset"]:hover {
+  background-color: #e0e0e0;
 }
