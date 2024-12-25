@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "../SearchForm/SearchForm.css";
 
-const SearchForm = ({onSearch}) => {
+const SearchForm = ({ onSearch }) => {
   const [search, setSearch] = useState({
     type: "",
     minPrice: "",
@@ -19,12 +20,26 @@ const SearchForm = ({onSearch}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(search)
+    onSearch(search);
   };
 
+  const handleReset = (e) => {
+    e.preventDefault();
+    onSearch({
+      type: "",
+      minPrice: "",
+      maxPrice: "",
+      minBedrooms: "",
+      maxBedrooms: "",
+      startDate: "",
+      endDate: "",
+      postcodeArea: "",
+    });
+  }
+
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="search-form">
+      <form onSubmit={handleSubmit} onReset={handleReset}>
         <div>
           <label>Type: </label>
           <select name="type" value={search.type} onChange={handleChange}>
@@ -39,6 +54,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="number"
             name="minPrice"
+            value={search.minPrice}
             onChange={handleChange}
           />
         </div>
@@ -48,6 +64,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="number"
             name="maxPrice"
+            value={search.maxPrice}
             onChange={handleChange}
           />
         </div>
@@ -57,6 +74,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="number"
             name="minBedrooms"
+            value={search.minBedrooms} 
             onChange={handleChange}
           />
         </div>
@@ -66,6 +84,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="number"
             name="maxBedrooms"
+            value={search.maxBedrooms}
             onChange={handleChange}
           />
         </div>
@@ -75,6 +94,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="date"
             name="startDate"
+            value={search.startDate} 
             onChange={handleChange}
           />
         </div>
@@ -84,6 +104,7 @@ const SearchForm = ({onSearch}) => {
           <input
             type="date"
             name="endDate"
+            value={search.endDate} 
             onChange={handleChange}
           />
         </div>
@@ -93,13 +114,14 @@ const SearchForm = ({onSearch}) => {
           <input
             type="text"
             name="postcodeArea"
+            value={search.postcodeArea}
             onChange={handleChange}
           />
         </div>
 
         <button type="submit">Search</button>
+        <button type="reset">Reset</button>
       </form>
-      <p>Search Criteria: {JSON.stringify(search, null, 2)}</p>
     </div>
   );
 };
