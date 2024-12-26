@@ -1,0 +1,11 @@
+.property-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+}

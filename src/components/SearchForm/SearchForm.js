@@ -24,7 +24,7 @@ const SearchForm = ({ onSearch }) => {
   };
 
   const handleReset = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setSearch({
       type: "",
       minPrice: "",
@@ -51,8 +51,13 @@ const SearchForm = ({ onSearch }) => {
     <div className="search-form">
       <form onSubmit={handleSubmit} onReset={handleReset}>
         <div className="form-group">
-          <label>Type: </label>
-          <select name="type" value={search.type} onChange={handleChange}>
+          <label htmlFor="type">Type: </label>
+          <select
+            id="type"
+            name="type"
+            value={search.type}
+            onChange={handleChange}
+          >
             <option value="">Any</option>
             <option value="House">House</option>
             <option value="Flat">Flat</option>
@@ -61,9 +66,10 @@ const SearchForm = ({ onSearch }) => {
 
         <div className="form-group-inline">
           <div>
-            <label>Min Price: </label>
+            <label htmlFor="minPrice">Min Price: </label>
             <input
               type="number"
+              id="minPrice"
               name="minPrice"
               value={search.minPrice}
               onChange={handleChange}
@@ -71,9 +77,10 @@ const SearchForm = ({ onSearch }) => {
           </div>
 
           <div>
-            <label>Max Price: </label>
+            <label htmlFor="maxPrice">Max Price: </label>
             <input
               type="number"
+              id="maxPrice"
               name="maxPrice"
               value={search.maxPrice}
               onChange={handleChange}
@@ -83,9 +90,10 @@ const SearchForm = ({ onSearch }) => {
 
         <div className="form-group-inline">
           <div>
-            <label>Min Bedrooms: </label>
+            <label htmlFor="minBedrooms">Min Bedrooms: </label>
             <input
               type="number"
+              id="minBedrooms"
               name="minBedrooms"
               value={search.minBedrooms}
               onChange={handleChange}
@@ -93,9 +101,10 @@ const SearchForm = ({ onSearch }) => {
           </div>
 
           <div>
-            <label>Max Bedrooms: </label>
+            <label htmlFor="maxBedrooms">Max Bedrooms: </label>
             <input
               type="number"
+              id="maxBedrooms"
               name="maxBedrooms"
               value={search.maxBedrooms}
               onChange={handleChange}
@@ -105,9 +114,10 @@ const SearchForm = ({ onSearch }) => {
 
         <div className="form-group-inline">
           <div>
-            <label>Start Date: </label>
+            <label htmlFor="startDate">Start Date: </label>
             <input
               type="date"
+              id="startDate"
               name="startDate"
               value={search.startDate}
               onChange={handleChange}
@@ -115,9 +125,10 @@ const SearchForm = ({ onSearch }) => {
           </div>
 
           <div>
-            <label>End Date: </label>
+            <label htmlFor="endDate">End Date: </label>
             <input
               type="date"
+              id="endDate"
               name="endDate"
               value={search.endDate}
               onChange={handleChange}
@@ -126,9 +137,10 @@ const SearchForm = ({ onSearch }) => {
         </div>
 
         <div className="form-group">
-          <label>Post Code: </label>
+          <label htmlFor="postcodeArea">Post Code: </label>
           <input
             type="text"
+            id="postcodeArea"
             name="postcodeArea"
             value={search.postcodeArea}
             onChange={handleChange}
