@@ -1,0 +1,30 @@
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+
+function App() {
+  return (
+    <Tabs>
+      <TabList>
+        <Tab>Tab 1</Tab>
+        <Tab>Tab 2</Tab>
+        <Tab>Tab 3</Tab>
+      </TabList>
+
+      <TabPanel>
+        <h2>Content for Tab 1</h2>
+        <p>This is the first tab's content.</p>
+      </TabPanel>
+      <TabPanel>
+        <h2>Content for Tab 2</h2>
+        <p>This is the second tab's content.</p>
+      </TabPanel>
+      <TabPanel>
+        <h2>Content for Tab 3</h2>
+        <p>This is the third tab's content.</p>
+      </TabPanel>
+    </Tabs>
+  );
+}
+
+export default App;

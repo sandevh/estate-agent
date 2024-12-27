@@ -15,23 +15,28 @@ const PropertyDetails = ({ properties }) => {
   }
 
   return (
-    <div className="property-details">
-      <h1 className="property-details-heading">{property.type} Details</h1>
-      <p className="property-details-text">
-        <strong>Location:</strong> {property.location}
-      </p>
-      <p className="property-details-text">
-        <strong>Bedrooms:</strong> {property.bedrooms}
-      </p>
-      <p className="property-details-text">
-        <strong>Price:</strong> ${property.price}
-      </p>
-      <p className="property-details-text">
-        <strong>Description:</strong> {property.description}
-      </p>
-      <button className="property-details-button" onClick={() => navigate("/")}>
-        Back to Listings
-      </button>
+    <div className="property-details-container">
+      <div className="property-details">
+        <h1 className="property-details-heading">{property.type} Details</h1>
+        <p className="property-details-text">
+          <strong>Location:</strong> {property.location}
+        </p>
+        <p className="property-details-text">
+          <strong>Bedrooms:</strong> {property.bedrooms}
+        </p>
+        <p className="property-details-text">
+          <strong>Price:</strong> ${property.price}
+        </p>
+        <p className="property-details-text">
+          <strong>Description:</strong> {property.description}
+        </p>
+        <button
+          className="property-details-button"
+          onClick={() => navigate("/")}
+        >
+          Back to Listings
+        </button>
+      </div>
     </div>
   );
 };

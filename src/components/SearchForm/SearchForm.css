@@ -1,4 +1,5 @@
 .search-form {
+  align-self: stretch;
   padding: 20px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -86,4 +87,11 @@ select:focus {
 
 .control-buttons button[type="reset"]:hover {
   background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    width: 100%;
+    /* Full width for smaller screens */
+  }
 }

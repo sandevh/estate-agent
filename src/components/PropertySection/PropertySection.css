@@ -5,7 +5,26 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
-  box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
+  /* background-color: white; */
+  padding: 40px 40px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .property-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .property-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .property-items {
+    grid-template-columns: 1fr;
+  }
 }

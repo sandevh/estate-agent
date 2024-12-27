@@ -175,7 +175,6 @@ const App = () => {
                   <PropertySection
                     properties={filteredProperties}
                     toggleFavorite={addFavorite}
-                    // handleDrop={handleRemoveDrop}
                   />
                 </div>
 
@@ -188,7 +187,6 @@ const App = () => {
                     favorites={favorites}
                     toggleFavorite={removeFavorite}
                     onClear={clearFavorites}
-                    // handleDrop={handleAddDrop}
                   />
                 </div>
               </>
