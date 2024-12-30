@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 import "../SearchForm/SearchForm.css";
+import {
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  TextField,
+} from "@mui/material";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 const SearchForm = ({ onSearch }) => {
   const [search, setSearch] = useState({
@@ -8,8 +18,8 @@ const SearchForm = ({ onSearch }) => {
     maxPrice: "",
     minBedrooms: "",
     maxBedrooms: "",
-    startDate: "",
-    endDate: "",
+    startDate: null,
+    endDate: null,
     postcodeArea: "",
   });
 
@@ -18,21 +28,24 @@ const SearchForm = ({ onSearch }) => {
     setSearch({ ...search, [name]: value });
   };
 
+  const handleDateChange = (name, value) => {
+    setSearch({ ...search, [name]: value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     onSearch(search);
   };
 
-  const handleReset = (e) => {
-    // e.preventDefault();
+  const handleReset = () => {
     const resetValues = {
       type: "",
       minPrice: "",
       maxPrice: "",
       minBedrooms: "",
       maxBedrooms: "",
-      startDate: "",
-      endDate: "",
+      startDate: null,
+      endDate: null,
       postcodeArea: "",
     };
     setSearch(resetValues);
@@ -41,109 +54,95 @@ const SearchForm = ({ onSearch }) => {
 
   return (
     <div className="search-form">
-      <form onSubmit={handleSubmit} onReset={handleReset}>
-        <div className="form-group">
-          <label htmlFor="type-input">Type: </label>
-          <select
-            id="type-input"
-            name="type"
-            value={search.type}
-            onChange={handleChange}
-          >
-            <option value="">Any</option>
-            <option value="House">House</option>
-            <option value="Flat">Flat</option>
-          </select>
-        </div>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <form onSubmit={handleSubmit} onReset={handleReset}>
+          <div className="form-group">
+            <FormControl fullWidth>
+              <InputLabel id="type-select-label">Type</InputLabel>
+              <Select
+                labelId="type-select-label"
+                id="type-input"
+                name="type"
+                value={search.type}
+                onChange={handleChange}
+                label="Type"
+              >
+                <MenuItem value="">Any</MenuItem>
+                <MenuItem value="House">House</MenuItem>
+                <MenuItem value="Flat">Flat</MenuItem>
+              </Select>
+            </FormControl>
+          </div>
 
-        <div className="form-group-inline">
-          <div>
-            <label htmlFor="minPrice-input">Min Price: </label>
-            <input
+          <div className="form-group-inline">
+            <TextField
+              label="Min Price"
               type="number"
-              id="minPrice-input"
               name="minPrice"
               value={search.minPrice}
               onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label htmlFor="maxPrice-input">Max Price: </label>
-            <input
+            <TextField
+              label="Max Price"
               type="number"
-              id="maxPrice-input"
               name="maxPrice"
               value={search.maxPrice}
               onChange={handleChange}
             />
           </div>
-        </div>
 
-        <div className="form-group-inline">
-          <div>
-            <label htmlFor="minBedrooms-input">Min Bedrooms: </label>
-            <input
+          <div className="form-group-inline">
+            <TextField
+              label="Min Bedrooms"
               type="number"
-              id="minBedrooms-input"
               name="minBedrooms"
               value={search.minBedrooms}
               onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label htmlFor="maxBedrooms-input">Max Bedrooms: </label>
-            <input
+            <TextField
+              label="Max Bedrooms"
               type="number"
-              id="maxBedrooms-input"
               name="maxBedrooms"
               value={search.maxBedrooms}
               onChange={handleChange}
             />
           </div>
-        </div>
 
-        <div className="form-group-inline">
-          <div>
-            <label htmlFor="startDate-input">Start Date: </label>
-            <input
-              type="date"
-              id="startDate-input"
-              name="startDate"
+          <div className="form-group-inline">
+            <DatePicker
+              label="Start Date"
               value={search.startDate}
-              onChange={handleChange}
+              onChange={(newValue) => handleDateChange("startDate", newValue)}
+              TextFieldComponent={(params) => (
+                <TextField {...params} fullWidth />
+              )} 
             />
-          </div>
-
-          <div>
-            <label htmlFor="endDate-input">End Date: </label>
-            <input
-              type="date"
-              id="endDate-input"
-              name="endDate"
+            <DatePicker
+              label="End Date"
               value={search.endDate}
+              onChange={(newValue) => handleDateChange("endDate", newValue)}
+              TextFieldComponent={(params) => (
+                <TextField {...params} fullWidth />
+              )} 
+            />
+          </div>
+
+          <div className="form-group">
+            <TextField
+              label="Post Code"
+              type="text"
+              name="postcodeArea"
+              value={search.postcodeArea}
               onChange={handleChange}
             />
           </div>
-        </div>
 
-        <div className="form-group">
-          <label htmlFor="postcodeArea-input">Post Code: </label>
-          <input
-            type="text"
-            id="postcodeArea-input"
-            name="postcodeArea"
-            value={search.postcodeArea}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="control-buttons">
-          <button type="submit">Search</button>
-          <button type="reset">Reset</button>
-        </div>
-      </form>
+          <div className="control-buttons form-group">
+            <button type="submit">Search</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </LocalizationProvider>
     </div>
   );
 };

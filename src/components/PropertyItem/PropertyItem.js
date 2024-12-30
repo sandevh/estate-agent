@@ -15,7 +15,7 @@ const PropertyItem = ({ property, toggleFavorite, isInFavorites, handleDrop}) =>
       onDragStart={handleDragStart}
       onDrop={handleDrop}
     >
-      <img src={property.picture} alt="property" draggable="false"/>
+      <img src={property.picture} alt="property" draggable="false" />
       <div className="details">
         <h3>{property.type}</h3>
         <p>Bedrooms: {property.bedrooms}</p>
@@ -42,13 +42,18 @@ const PropertyItem = ({ property, toggleFavorite, isInFavorites, handleDrop}) =>
           {`${property.added.day}-${property.added.month}-${property.added.year}`}
         </p>
 
-        <Link to={`/property/${property.id}`} draggable="false" className="property-page-link">
-          View More
-        </Link>
-
-        <button onClick={() => toggleFavorite(property)}>
-          {isInFavorites ? "Remove From Favorites" : "Add To Favorites"}
-        </button>
+        <div className="control-buttons">
+          <Link
+            to={`/property/${property.id}`}
+            draggable="false"
+            className="property-page-link"
+          >
+            View More
+          </Link>
+          <button onClick={() => toggleFavorite(property)}>
+            {isInFavorites ? "Remove From Favorites" : "Add To Favorites"}
+          </button>
+        </div>
       </div>
     </div>
   );

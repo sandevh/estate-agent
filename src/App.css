@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Object+Sans&display=swap'); */
+
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -7,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: 'Object Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif; */
 }
 
 /* .App-logo {
