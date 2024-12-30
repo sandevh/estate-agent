@@ -1,83 +1,104 @@
-/* .property-details {
-  padding: 20px;
-  margin: 0;
-  max-width: 800px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-
-.property-details-heading {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.property-details-text {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.property-details-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #3ce1c8;
-  color: #000000;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.property-details-button:hover {
-  background-color: #0e8573;
-} */
-
 .property-details-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .property-details {
+  background: #fff;
+  border-radius: 24px;
   padding: 20px;
-  margin: 0;
-  max-width: 800px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* min-height: 100vh; */
-  /* Ensure it takes at least full height */
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1),
+    0 1px 3px rgba(99, 102, 241, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .property-details-heading {
+  font-size: 2em;
+  font-weight: 600;
+  color: #0e0ea2;
+  margin-bottom: 1em;
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
 }
 
 .property-details-text {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
 }
 
 .property-details-button {
-  display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #3ce1c8;
-  color: #000000;
+  background: linear-gradient(to right, #f12dd4, #f057de);
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  padding: 8px 14px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .property-details-button:hover {
-  background-color: #0e8573;
+  background: linear-gradient(to right, #f94ade, #fe72ee);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+  transform: translateY(-1px);
+}
+
+.property-details-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(16, 185, 129, 0.1);
+}
+
+.property-tabs .react-tabs__tab-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.property-tabs .react-tabs__tab {
+  padding: 12px 20px;
+  font-size: 1.1em;
+  background: #f1f1f1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.property-tabs .react-tabs__tab--selected {
+  background: linear-gradient(to right, #4e2df1, #0e0ea2);
+  color: #fff;
+}
+
+.property-tabs .react-tabs__tab:hover {
+  background: #e1e1e1;
+  color: #000;
+}
+
+.property-tabs .react-tabs__tab-panel {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  /* margin-top: 20px; */
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1),
+    0 1px 3px rgba(99, 102, 241, 0.08);
+  max-height: 800px;
+  /* Optional: to keep a limited height for tabs */
+  overflow-y: auto;
+  /* Enable scrolling if content exceeds max height */
+}
+
+.property-tabs h5 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
 }

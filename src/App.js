@@ -17,7 +17,7 @@ const App = () => {
   );
     // const handleSearch = (search) => {
     //   const filteredProperties = properties.filter((property) => {
-    //     const addedDate = new Date(`${property.added.month}-${property.added.day}-${property.added.year}`);
+    //     const addedDate = new Date(${property.added.month}-${property.added.day}-${property.added.year});
 
     //     const isTypeMatch = search.type ? search.type === property.type : true;
 
@@ -157,7 +157,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <h1>Real Estate App</h1>
+        <h2>Real Estate</h2>
 
         <Routes>
           <Route

@@ -1,13 +1,13 @@
 .App {
   font-family: Arial, sans-serif;
   padding: 20px;
-  /* background-color: rgb(93, 93, 195); */
-  background-color: rgb(101, 98, 98);
+  background: linear-gradient(135deg, #f6f9fc 0%, #edf1f7 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* .App-logo {

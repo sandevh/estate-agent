@@ -6,9 +6,16 @@
       "bedrooms": 3,
       "price": 750000,
       "tenure": "Freehold",
-      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops schools bus routes and National Trust woodland. The property comprises two receptions fitted 18'9 x 10'1 kitchen breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing gas central heating and a well presented interior.",
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
       "picture": "images/prop1/prop1pic1small.jpg",
+      "galleryImages": [
+        "images/prop1/prop1pic1small.jpg",
+        "images/prop1/prop1pic2small.jpg",
+        "images/prop1/prop1pic3small.jpg",
+        "images/prop1/prop1pic4small.jpg",
+        "images/prop1/prop1pic5small.jpg"
+      ],
       "url": "properties/prop1.html",
       "added": {
         "month": "October",
@@ -22,9 +29,16 @@
       "bedrooms": 2,
       "price": 399995,
       "tenure": "Freehold",
-      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-      "location": "Crofton Road Orpington BR6",
+      "description": "Exceptionally well presented two double bedroom garden flat situated in a prime residential location with excellent transport links and local amenities. The property features a stunning open plan kitchen and living space with solid wooden floors and integrated appliances including dishwasher and washing machine. Bi folding doors lead onto a beautifully maintained private courtyard garden providing excellent outdoor entertainment space. The property offers two generously sized double bedrooms and two modern bathrooms including a family bathroom and separate wet room. Additional features include walnut doors throughout modern décor and comprehensive TV connectivity in all main rooms. The property benefits from a 10 year building guarantee with 5 years remaining.",
+      "location": "Crofton Road, Orpington, BR6",
       "picture": "images/prop2/prop2pic1small.jpg",
+      "galleryImages": [
+        "images/prop2/prop2pic1small.jpg",
+        "images/prop2/prop2pic2small.jpg",
+        "images/prop2/prop2pic3small.jpg",
+        "images/prop2/prop2pic4small.jpg",
+        "images/prop2/prop2pic5small.jpg"
+      ],
       "url": "properties/prop2.html",
       "added": {
         "month": "September",
@@ -38,9 +52,16 @@
       "bedrooms": 1,
       "price": 275000,
       "tenure": "Leasehold",
-      "description": "Modern one-bedroom apartment located just 0.2 miles from Bromley South station. Features an open-plan living area, fully fitted kitchen with integrated appliances, spacious double bedroom with built-in wardrobe, and a contemporary bathroom. Ideal for first-time buyers or investors.",
-      "location": "High Street, Bromley BR1",
+      "description": "Contemporary one bedroom apartment positioned in a sought after development just 0.2 miles from Bromley South station offering excellent commuter links to central London. The property features a spacious open plan living area and modern kitchen with high specification integrated appliances throughout. The generous double bedroom includes fitted wardrobes providing ample storage space. The property benefits from a luxury fitted bathroom with premium fixtures and fittings. Additional features include secure entry system underfloor heating throughout and access to well maintained communal gardens. The location offers easy access to Bromley town center with its extensive shopping and leisure facilities.",
+      "location": "High Street, Bromley, BR1",
       "picture": "images/prop3/prop3pic1small.jpg",
+      "galleryImages": [
+        "images/prop3/prop3pic1small.jpg",
+        "images/prop3/prop3pic2small.jpg",
+        "images/prop3/prop3pic3small.jpg",
+        "images/prop3/prop3pic4small.jpg",
+        "images/prop3/prop3pic5small.jpg"
+      ],
       "url": "properties/prop3.html",
       "added": {
         "month": "November",
@@ -54,9 +75,16 @@
       "bedrooms": 4,
       "price": 875000,
       "tenure": "Freehold",
-      "description": "Spacious four-bedroom detached home in a quiet residential area. Features include a large lounge, separate dining room, fully fitted kitchen, study, master bedroom with en-suite, garage, and a beautifully landscaped garden.",
-      "location": "Station Road, West Wickham BR4",
+      "description": "Impressive four bedroom detached family home situated in a prestigious residential area close to excellent schools and transport links. The property offers exceptional living space including a grand reception room separate formal dining room and contemporary fitted kitchen with premium appliances. The ground floor also features a dedicated study ideal for home working. The first floor comprises four well proportioned bedrooms including a master with luxury en suite bathroom. The property benefits from a detached garage extensive driveway parking and a stunning landscaped garden. Additional features include modern security systems premium quality fixtures and classic architectural details throughout.",
+      "location": "Station Road, West Wickham, BR4",
       "picture": "images/prop4/prop4pic1small.jpg",
+      "galleryImages": [
+        "images/prop4/prop4pic1small.jpg",
+        "images/prop4/prop4pic2small.jpg",
+        "images/prop4/prop4pic3small.jpg",
+        "images/prop4/prop4pic4small.jpg",
+        "images/prop4/prop4pic5small.jpg"
+      ],
       "url": "properties/prop4.html",
       "added": {
         "month": "August",
@@ -70,9 +98,16 @@
       "bedrooms": 3,
       "price": 520000,
       "tenure": "Leasehold",
-      "description": "Beautifully presented three-bedroom flat featuring a bright living room, modern kitchen, private balcony, and two bathrooms including an en-suite. Located near excellent transport links and local amenities.",
-      "location": "Lewisham High Street, London SE13",
+      "description": "Stunning three bedroom apartment offering contemporary living space in a modern development with excellent transport connections. The property features an expansive open plan living and dining area flooded with natural light through floor to ceiling windows. The kitchen is fitted with premium integrated appliances and stone worktops. Three generously sized bedrooms include a master with luxury en suite facilities. The property benefits from a private balcony offering views across London. Additional features include secure underground parking 24 hour concierge service and access to well maintained communal gardens. The development is situated moments from extensive local amenities and green spaces.",
+      "location": "Lewisham High Street, London, SE13",
       "picture": "images/prop5/prop5pic1small.jpg",
+      "galleryImages": [
+        "images/prop5/prop5pic1small.jpg",
+        "images/prop5/prop5pic2small.jpg",
+        "images/prop5/prop5pic3small.jpg",
+        "images/prop5/prop5pic4small.jpg",
+        "images/prop5/prop5pic5small.jpg"
+      ],
       "url": "properties/prop5.html",
       "added": {
         "month": "July",
@@ -86,9 +121,16 @@
       "bedrooms": 5,
       "price": 1200000,
       "tenure": "Freehold",
-      "description": "Luxury five-bedroom detached house with spacious interiors, double garage, and a large garden. Includes a modern kitchen, three bathrooms, and a home office. Situated in an exclusive neighborhood.",
-      "location": "Park Avenue, Beckenham BR3",
+      "description": "Exceptional five bedroom detached residence offering luxurious accommodation in one of Beckenham's most prestigious locations. The property features an impressive entrance hall leading to multiple reception rooms including a formal drawing room and family room. The bespoke kitchen features premium appliances and opens onto a breakfast room with garden views. The first floor comprises five bedrooms including two with en suite facilities and a family bathroom. The property benefits from a substantial double garage extensive driveway parking and beautifully landscaped gardens. Additional features include a dedicated home office air conditioning and sophisticated security systems",
+      "location": "Park Avenue, Beckenham, BR3",
       "picture": "images/prop6/prop6pic1small.jpg",
+      "galleryImages": [
+        "images/prop6/prop6pic1small.jpg",
+        "images/prop6/prop6pic2small.jpg",
+        "images/prop6/prop6pic3small.jpg",
+        "images/prop6/prop6pic4small.jpg",
+        "images/prop6/prop6pic5small.jpg"
+      ],
       "url": "properties/prop6.html",
       "added": {
         "month": "June",
@@ -102,9 +144,16 @@
       "bedrooms": 2,
       "price": 450000,
       "tenure": "Leasehold",
-      "description": "Charming two-bedroom flat located within a short walk to Greenwich Park. Features a bright open-plan living area, modern kitchen, two bathrooms, and a private terrace with stunning views.",
-      "location": "Greenwich South Street, London SE10",
+      "description": "Charming two bedroom apartment situated in a historic building close to Greenwich Park offering period features combined with modern convenience. The property features a bright and spacious open plan living area with restored original wooden floors and high ceilings. The contemporary kitchen includes premium integrated appliances and stone worktops. Both bedrooms are well proportioned with the master featuring built in storage. The property benefits from two modern bathrooms and a private terrace offering impressive London views. Additional features include restored period details smart home technology and secure bicycle storage. The location provides easy access to excellent transport links and local amenities",
+      "location": "Greenwich South Street, London, SE10",
       "picture": "images/prop7/prop7pic1small.jpg",
+      "galleryImages": [
+        "images/prop7/prop7pic1small.jpg",
+        "images/prop7/prop7pic2small.jpg",
+        "images/prop7/prop7pic3small.jpg",
+        "images/prop7/prop7pic4small.jpg",
+        "images/prop7/prop7pic5small.jpg"
+      ],
       "url": "properties/prop7.html",
       "added": {
         "month": "May",
@@ -118,9 +167,16 @@
       "bedrooms": 3,
       "price": 650000,
       "tenure": "Freehold",
-      "description": "A well-maintained three-bedroom end-of-terrace house located in a quiet cul-de-sac. The property features a spacious lounge, modern kitchen with integrated appliances, family bathroom, and a large rear garden. There is also off-street parking for two cars. Within walking distance to local schools and transport links.",
-      "location": "Mereworth Road, Orpington BR5",
+      "description": "Well presented three bedroom end of terrace house positioned in a peaceful residential cul de sac with excellent access to local amenities. The property features a welcoming entrance hall leading to a spacious through lounge and modern fitted kitchen with integrated appliances. The ground floor also includes a separate dining room ideal for family entertaining. The first floor comprises three well proportioned bedrooms and a contemporary family bathroom. The property benefits from a beautifully maintained rear garden and off street parking for multiple vehicles. Additional features include modern double glazing gas central heating and proximity to well regarded local schools.",
+      "location": "Mereworth Road, Orpington, BR5",
       "picture": "images/prop8/prop8pic1small.jpg",
+      "galleryImages": [
+        "images/prop8/prop8pic1small.jpg",
+        "images/prop8/prop8pic2small.jpg",
+        "images/prop8/prop8pic3small.jpg",
+        "images/prop8/prop8pic4small.jpg",
+        "images/prop8/prop8pic5small.jpg"
+      ],
       "url": "properties/prop8.html",
       "added": {
         "month": "December",
