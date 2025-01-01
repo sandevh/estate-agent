@@ -2,7 +2,7 @@ import React from "react";
 import PropertyItem from "../PropertyItem/PropertyItem";
 import "../FavoriteSection/FavoriteSection.css";
 
-const FavoriteSection = ({ favorites, toggleFavorite, onClear, handleAddDrop }) => {
+const FavoriteSection = ({ favorites, toggleFavorite, onClear, onDragEnd }) => {
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -29,13 +29,14 @@ const FavoriteSection = ({ favorites, toggleFavorite, onClear, handleAddDrop }) 
               property={favoriteProperty}
               toggleFavorite={toggleFavorite}
               isInFavorites={true}
+              onDragEnd={onDragEnd}
             />
           ))}
         </div>
       ) : (
         <div>
           <p>No favorite properties yet.</p>
-          <p>Drag Properties here to add</p>
+          <p>Drag & Drop Properties here to add</p>
         </div>
       )}
     </div>

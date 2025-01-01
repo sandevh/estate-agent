@@ -2,7 +2,7 @@ import React from "react";
 import PropertyItem from "../PropertyItem/PropertyItem";
 import "../PropertySection/PropertySection.css";
 
-const PropertySection = ({ properties, toggleFavorite, handleRemoveDrop }) => {
+const PropertySection = ({ properties, toggleFavorite, onDragEnd }) => {
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -20,6 +20,7 @@ const PropertySection = ({ properties, toggleFavorite, handleRemoveDrop }) => {
             property={property}
             toggleFavorite={toggleFavorite}
             isInFavorites={false}
+            onDragEnd={onDragEnd}
           />
         ))
       ) : (

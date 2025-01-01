@@ -1,0 +1,17 @@
+.fd {
+  border: 2px dashed #1e1e1e;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: linear-gradient(to right, #f458e1, #f99bee);
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  right: 20px;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  z-index: 1000;
+}

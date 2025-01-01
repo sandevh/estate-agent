@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Object+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Object+Sans&display=swap');
 
 .App {
   font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  /* font-family: 'Object Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif; */
+  font-family: 'Object Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif;
 }
 
 /* .App-logo {

@@ -28,10 +28,10 @@
 }
 
 .property-details-button {
-  background: linear-gradient(to right, #f12dd4, #f057de);
-  color: #fff;
+  background: linear-gradient(to right, #50efc0, #69f5cb);
+  color: #000;
   border: none;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -47,7 +47,7 @@
 }
 
 .property-details-button:hover {
-  background: linear-gradient(to right, #f94ade, #fe72ee);
+  background: linear-gradient(to right, #62f1c6, #80f9d5);
   box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
   transform: translateY(-1px);
 }
@@ -87,13 +87,10 @@
   padding: 20px;
   background: #f9f9f9;
   border-radius: 12px;
-  /* margin-top: 20px; */
   box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1),
     0 1px 3px rgba(99, 102, 241, 0.08);
   max-height: 800px;
-  /* Optional: to keep a limited height for tabs */
   overflow-y: auto;
-  /* Enable scrolling if content exceeds max height */
 }
 
 .property-tabs h5 {
@@ -101,4 +98,4 @@
   margin-bottom: 15px;
   text-align: center;
   color: #333;
-}
+} 

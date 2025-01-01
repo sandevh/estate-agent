@@ -36,10 +36,17 @@ const PropertyDetails = ({ properties }) => {
               <strong>Bedrooms:</strong> {property.bedrooms}
             </p>
             <p className="property-details-text">
-              <strong>Price:</strong> ${property.price.toLocaleString()}
+              <strong>Price:</strong> {property.price.toLocaleString()}
+            </p>
+            <p className="property-details-text">
+              <strong>Tenure:</strong> {property.tenure}
             </p>
             <p className="property-details-text">
               <strong>Description:</strong> {property.description}
+            </p>
+            <p className="property-details-text">
+              <strong>Added:</strong>{" "}
+              {`${property.added.day} ${property.added.month}, ${property.added.year}`}
             </p>
           </div>
         </div>
@@ -47,15 +54,13 @@ const PropertyDetails = ({ properties }) => {
 
       <TabPanel>
         <div className="property-details-container">
-          {/* <h5>Property Gallery</h5> */}
           <Gallery galleryImages={property.galleryImages} />
         </div>
       </TabPanel>
 
       <TabPanel>
         <div className="property-details-container">
-          {/* <h5>Map Location</h5> */}
-          {/* Here you can add a map or location functionality */}
+          <p>Map functionality to be added here.</p>
         </div>
       </TabPanel>
 

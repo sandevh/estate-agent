@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../PropertyItem/PropertyItem.css";
 
-const PropertyItem = ({ property, toggleFavorite, isInFavorites, handleDrop}) => {
+const PropertyItem = ({ property, toggleFavorite, isInFavorites, handleDrop, onDragEnd }) => {
 
   const handleDragStart = (e) => {
     e.dataTransfer.setData("property_details", JSON.stringify([property, isInFavorites]));
@@ -14,6 +14,7 @@ const PropertyItem = ({ property, toggleFavorite, isInFavorites, handleDrop}) =>
       draggable
       onDragStart={handleDragStart}
       onDrop={handleDrop}
+      onDragEnd={onDragEnd}
     >
       <img src={property.picture} alt="property" draggable="false" />
       <div className="details">
