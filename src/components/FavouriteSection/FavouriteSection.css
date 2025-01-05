@@ -1,11 +1,13 @@
-.favorite-section {
+.favourite-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding: 26px 40px 56px 40px;
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .clear-button {
@@ -16,42 +18,44 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .clear-button:hover {
   background: linear-gradient(to right, #f83e4a, #f95f6a);
-  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
-  transform: translateY(-1px);
 }
 
-.clear-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 1px 2px rgba(16, 185, 129, 0.1);
-}
-
-.favorite-grid {
+.favourite-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  width: 100%;
+}
+
+.no-favourites {
+  font-weight: 600;
+  color: rgb(241, 87, 87);
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
-  .favorite-grid {
+  .favourite-grid {
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columns on medium screens */
   }
 }
 
 @media (max-width: 768px) {
-  .favorite-grid {
+  .favourite-grid {
     grid-template-columns: repeat(2, 1fr);
-    /* 2 columns on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .favorite-grid {
+  .favourite-grid {
     grid-template-columns: 1fr;
-    /* 1 column on mobile screens */
   }
 }

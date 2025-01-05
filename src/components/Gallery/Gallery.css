@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  /* padding: 20px; */
+  padding: 0 2em;
 }
 
 .carousel-container {
@@ -14,11 +14,11 @@
 }
 
 .fullscreen-image {
-  /* border: 2px solid #000; */
   border: 2px solid #fff;
   border-radius: 2em;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   margin: 0 20px;
 }
 
@@ -53,12 +53,14 @@ button:hover {
 .thumbnails-container {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .thumbnail-image {
   width: 60px;
-  border-radius: 1em;
   height: 60px;
+  border-radius: 1em;
   object-fit: cover;
   cursor: pointer;
   border: 2px solid transparent;
@@ -67,7 +69,6 @@ button:hover {
 
 .thumbnail-image.selected {
   border: 2px solid #fff;
-  /* border: 2px solid #000; */
 }
 
 .thumbnail-image:not(.selected) {
@@ -76,6 +77,53 @@ button:hover {
 
 .thumbnail-image:hover:not(.selected) {
   border: 2px solid #000;
-  /* border: 2px solid #fff; */
   opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .fullscreen-image {
+    max-width: 90%;
+  }
+
+  .gallery-container button {
+    font-size: 25px;
+    padding: 8px;
+  }
+
+  .thumbnail-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fullscreen-image {
+    max-width: 80%;
+  }
+
+  .gallery-container button {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .thumbnail-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fullscreen-image {
+    max-width: 100%;
+  }
+
+  .gallery-container button {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .thumbnail-image {
+    width: 35px;
+    height: 35px;
+  }
 }

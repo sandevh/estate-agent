@@ -1,4 +1,4 @@
-.fd {
+.favourtie-drop {
   border: 2px dashed #1e1e1e;
   border-radius: 8px;
   padding: 10px 12px;
@@ -8,6 +8,7 @@
   height: 100px;
   right: 20px;
   top: 50%;
+  transform: translateY(-50%);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,28 +1,36 @@
 .search-form {
   align-self: stretch;
-  padding: 20px;
+  padding: 20px 20px 60px 40px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(to right, rgb(210, 243, 254), rgb(224, 241, 247));
+  background: linear-gradient(to right, rgb(224, 240, 245), rgb(209, 234, 242));
+  width: 100%;
+  height: 100%;
 }
 
 form {
   display: flex;
-  /* flex-direction: column; */
   gap: 20px;
+}
+
+.search-form-heading {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  flex-direction: column;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
 .form-group {
   display: flex;
-  /* flex-direction: column; */
   margin-bottom: 15px;
   width: 150px;
 }
 
 .form-group-inline {
-  /* flex-direction: row; */
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -71,8 +79,8 @@ form {
 }
 
 .control-buttons button[type="reset"] {
-  background-color: #f1f1f1;
-  background: linear-gradient(to right, #f6f4f4, #ffffff);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+  background: linear-gradient(to right, #fff7f7, #ffffff);
   color: #333;
   border: none;
   transition: all 0.3s ease;
@@ -80,19 +88,31 @@ form {
 
 .control-buttons button:hover {
   background: linear-gradient(to right, #5e9de5, #7ab0ee);
-  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
-  transform: translateY(-1px);
 }
 
 .control-buttons button[type="reset"]:hover {
   background: linear-gradient(to right, #faf8f8, #ffffff);
-  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
-  transform: translateY(-1px);
 }
 
-.control-buttons button:active, .control-buttons button[type="reset"]:active {
-  transform: translateY(1px);
-  box-shadow: 0 1px 2px rgba(16, 185, 129, 0.1);
+@media (max-width: 1024px) {
+  form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group-inline {
+    flex-direction: column;
+  }
+
+  .control-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -109,5 +129,9 @@ form {
     flex-direction: column;
     gap: 10px;
   }
-}
 
+  .control-buttons button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
