@@ -11,7 +11,7 @@ import { LoadScript } from "@react-google-maps/api";
  */
 const GoogleMapsProvider = ({ children }) => {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyC1uzcPajksHgAE2rvNI-mG0c5zb7Vx5FY">
+    <LoadScript googleMapsApiKey="">
       {children}
     </LoadScript>
   );
